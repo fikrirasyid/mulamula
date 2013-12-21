@@ -79,18 +79,4 @@ jQuery(document).ready(function($) {
 			);
 		}
 	});
-
-	/**
-	 * Show conventional time when user hovering .entry-date
-	 */
-	$('.entry-meta').hover(
-		function(){
-			$(this).find('.human-time').hide();
-			$(this).find('.conventional-time').show();
-		}, 
-		function(){
-			$(this).find('.human-time').show();
-			$(this).find('.conventional-time').hide();			
-		}
-	);
 });

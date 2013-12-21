@@ -42,8 +42,7 @@ function mulamula_posted_on() {
 					<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a> </span> 
 					<span class="entry-author-action">updated this</span> 
 					<a href="%4$s" title="%5$s" class="entry-date">
-						<span class="human-time">%6$s</span>
-						<span class="conventional-time">%7$s</span>
+						<span class="conventional-time">%6$s</span>
 					</a>
 				</div>
 			', 'mulamula' ),
@@ -52,7 +51,6 @@ function mulamula_posted_on() {
 			get_the_author(),
 			esc_url( get_permalink() ),
 			sanitize_text_field( get_the_modified_date() ),
-			esc_html( mulamula_get_the_human_time( strtotime( get_the_modified_date('c') ) ) ),
 			esc_html( get_the_modified_date() )
 		);
 	} else {
@@ -62,8 +60,7 @@ function mulamula_posted_on() {
 					<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a> </span> 
 					<span class="entry-author-action">published this</span> 
 					<a href="%4$s" title="%5$s" class="entry-date">
-						<span class="human-time">%6$s</span>
-						<span class="conventional-time">%7$s</span>
+						<span class="conventional-time">%6$s</span>
 					</a>
 				</div>
 			', 'mulamula' ),
@@ -72,7 +69,6 @@ function mulamula_posted_on() {
 			get_the_author(),
 			esc_url( get_permalink() ),
 			sanitize_text_field( get_the_title() ),
-			esc_html( mulamula_get_the_human_time( strtotime( get_the_date('c') ) ) ),
 			esc_html( get_the_date() )
 		);
 	}
@@ -399,7 +395,6 @@ function mulamula_comment($comment, $args, $depth) {
 					<?php comment_reply_link(array_merge( $args, array('reply_text' => __('<span class="label">Reply</span>', 'mulamula'), 'add_below' => 'div-comment', 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 
 					<div class="comment-date">
-						<span class="human-time"><?php echo mulamula_get_the_human_time( strtotime( get_comment_time('c') ) ); ?></span>
 						<span class="conventional-time"><?php printf( get_comment_time('F d, Y')) ?></span>
 					</div>						
 				</div>				

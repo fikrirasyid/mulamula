@@ -1013,9 +1013,6 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-size: .6em;
   padding: 3px 0;
 }
-#content article .entry-meta .entry-posted-on .conventional-time {
-  display: none;
-}
 #content article .entry-meta .entry-posted-on a {
   color: #c1c1c1;
 }
@@ -1453,10 +1450,6 @@ body.admin-bar #top-nav .top-nav-container ul {
   padding: 10px 15px 8px;
   font: 0.7em "Montserrat", sans-serif;
   text-transform: uppercase;
-}
-#comments .pingback .comment-wrap .comment-action .comment-date .conventional-time,
-#comments .comment .comment-wrap .comment-action .comment-date .conventional-time {
-  display: none;
 }
 #comments .pingback .comment-wrap .comment-reply-link,
 #comments .comment .comment-wrap .comment-reply-link {
