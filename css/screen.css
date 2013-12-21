@@ -764,34 +764,8 @@ button:active,
   color: white;
   opacity: .95;
 }
-#top-nav #home {
-  float: left;
-  opacity: 0;
-}
-#top-nav #home img {
-  float: left;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin: 0;
-}
-#top-nav #home-name {
-  float: left;
-  color: white;
-  font: 300 0.7em "Montserrat", sans-serif;
-  text-transform: uppercase;
-  margin: 1px 0 0 10px;
-  opacity: 0;
-}
-#top-nav #home-name:hover {
-  color: #ebe7df;
-}
 #top-nav.scrolled {
   background: #1f7f5c;
-}
-#top-nav.scrolled #home-name,
-#top-nav.scrolled #home {
-  opacity: 1;
 }
 #top-nav .wrap {
   padding: 10px 0;
@@ -1709,21 +1683,6 @@ body.logged-in #respond .submit-comment-avatar {
   body.expanded #top-nav,
   #top-nav {
     background: #1f7f5c;
-  }
-  body.expanded #top-nav #home,
-  #top-nav #home {
-    opacity: 1;
-    padding-top: 1px;
-  }
-  body.expanded #top-nav #home img,
-  #top-nav #home img {
-    width: 30px;
-    height: 30px;
-  }
-  body.expanded #top-nav #home-name,
-  #top-nav #home-name {
-    font-size: .85em;
-    margin: 3px 0 0 15px;
   }
   body.expanded #top-nav #top-nav-toggle,
   #top-nav #top-nav-toggle {

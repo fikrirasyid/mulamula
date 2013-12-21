@@ -64,39 +64,8 @@
 	color: white;
 	opacity: .95;
 
-	#home{
-		float: left;
-		opacity: 0;
-
-		img{
-			float: left;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			margin: 0;
-		}
-	}
-
-	#home-name{
-		float: left;
-		color: white;
-		font: 300 .7em $montserrat;
-		text-transform: uppercase;
-		margin: 1px 0 0 10px;
-		opacity: 0;
-
-		&:hover{
-			color: $crem;
-		}
-	}
-
 	&.scrolled{
 		background: $green;		
-		
-		#home-name,
-		#home{
-			opacity: 1;
-		}
 	}
 
 	.wrap{
