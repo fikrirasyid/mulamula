@@ -780,7 +780,7 @@ button:active,
  * Content Article
  */
 #content {
-  margin: -20px 15px 0;
+  margin: 0 15px;
   position: relative;
   z-index: 60;
 }
@@ -1590,9 +1590,6 @@ body.logged-in #respond .submit-comment-avatar {
     height: 600px;
   }
 
-  #content {
-    margin-top: -62px;
-  }
   #content article {
     margin-bottom: 60px;
   }
