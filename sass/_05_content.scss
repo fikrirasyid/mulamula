@@ -2,8 +2,17 @@
  * 5.1
  * Content Article
  */
+#main{
+	.wrap{
+		padding-top: 30px;
+	}
+}
+
+#page-theme-desc{
+	margin-bottom: 30px;
+}
+
 #content{
-	margin: 0 15px;
 	position: relative;
 	z-index: 60; // should be higher than #header's
 
@@ -14,7 +23,7 @@
 		z-index: 40;
 
 		&.sticky{
-			box-shadow: 5px 5px 0 $green_dark;
+			background: #EEEEEE;
 		}
 
 		.entry-header{
@@ -189,7 +198,7 @@
 
 		&.attachment{
 			.entry-content{
-				padding: 20px 20px 0 !important;
+				padding: 20px 20px 10px !important;
 				text-align: center;
 				font-style: italic;
 				font-weight: 300;

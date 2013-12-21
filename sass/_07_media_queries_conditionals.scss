@@ -88,13 +88,6 @@ body{
 		}
 	}
 
-	#content,
-	.wrap{
-		width: 960px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	#header{
 		height: 220px;
 
@@ -259,11 +252,28 @@ body{
 			padding: 15px 20px 13px;
 		}
 	}	
+	
+	// Content Column
+	.wrap{
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#main{
+		.wrap{
+			@include clearfix;
+		}
+	}
+
+	#primary{
+		width: 640px;
+		margin: 0 20px 0 0;
+		float: left;
+	}
 
 	#secondary{
-		.wrap{
-			padding-top: 60px;
-		}
+		width: 300px;
+		float: left;
 	}
 }
 

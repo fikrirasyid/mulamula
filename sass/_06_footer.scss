@@ -1,3 +1,21 @@
+#secondary{
+	.widget{
+		margin-bottom: 30px;
+
+		ul{
+			li{
+				font-size: .8em;
+
+				a{
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
 /** 
  * 6.1
  * Footer
@@ -51,9 +69,7 @@
  * Widgets
  */
 #secondary{
-	.wrap{
-		padding-top: 30px;
-	}
+
 }
 
 /** 

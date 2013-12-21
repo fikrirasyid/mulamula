@@ -75,6 +75,34 @@ function mulamula_posted_on() {
 }
 
 /**
+ * Prints content. On single page, prints the tags
+ */
+function mulamula_content(){
+	if( is_attachment() ){
+		if( isset( $_SERVER['HTTP_REFERER'] ) ){
+			$parent_post_url = esc_url( $_SERVER['HTTP_REFERER'] );
+		} else {
+			$parent_post_url = get_permalink( $post->post_parent );
+		}
+		?>
+			<a href="<?php $attachment_src = wp_get_attachment_image_src( get_the_ID(), 'fullsize' ); echo $attachment_src[0]; ?>" class="entry-featured-image" rel="bookmark">
+				<?php echo mulamula_remove_width_attribute( wp_get_attachment_image( get_the_ID(), 'large' ) ); ?>
+			</a>
+		<?php
+	}
+
+	the_content( __( 'Continue Reading &rarr;', 'mulamula' ) );
+
+	if( is_page() ){
+		wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'mulamula' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); 
+	}
+
+	if( is_single() ){
+			the_tags( '<div class="entry-tags">' . __( 'Tags: ', 'mulamula' ), ', ', '</div>' );
+	}
+}
+
+/**
  * Returns human readable time
  */
 function mulamula_get_the_human_time($post_time = 0){

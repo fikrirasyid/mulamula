@@ -1,14 +1,4 @@
 	<footer id="colophon" class="site-footer wrap-outer" role="contentinfo">
-		<div id="secondary" class="widget-area" role="complementary">
-			<div class="wrap">
-				<aside id="nav_menu-3" class="widget widget_nav_menu">					
-					<ul>
-						<?php dynamic_sidebar( 'footer-widgets' ); ?>
-					</ul>
-				</aside>
-			</div> 
-		</div> 
-
 		<div class="site-info">
 			<div class="wrap">
 				<?php

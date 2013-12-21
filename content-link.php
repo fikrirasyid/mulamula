@@ -15,7 +15,7 @@
 		<?php endif; ?>
 	</header>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue Reading &rarr;', 'mulamula' ) ); ?>
+		<?php mulamula_content(); ?>
 	</div> 
 	<footer class="entry-footer">
 		<span class="icon-wrap"><span class="icon"></span></span>
