@@ -69,7 +69,6 @@ function mulamula_customize_css(){
 			color: <?php echo $site_color_darker; ?>;			
 		}
 
-		#top-nav .top-nav-container ul li a:hover,
 		.entry-content a:hover,
 		#comments .navigation-comment a:active{
 			color: <?php echo $site_color_darker; ?>;

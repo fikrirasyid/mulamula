@@ -62,10 +62,100 @@
 	position: relative;
 	z-index: 200;
 	color: white;
-	opacity: .95;
+	background: $green;
+	font-size: .8em;
 
 	.wrap{
-		padding: 10px 0;
 		@include clearfix;
+
+
+		a{
+			color: white;
+		}
+
+
+		ul{
+			@include clearfix;
+
+			li{
+				float: left;
+				border-left: 1px solid $green_dark;
+				position: relative;
+
+				&:first-child{
+					border-left: none;
+				}
+
+				a{
+					float: left;
+					padding: 5px 10px;
+
+					&:hover{
+						background: $green_dark;
+						color: white;
+					}
+				}
+
+				&.active{
+					a{
+						background: $green_dark;
+					}
+				}
+
+				&.menu-item-has-children > a{
+					padding-right: 25px;
+
+					&:after{
+						display: inline-block;
+						width: 16px;
+						height: 16px;
+						font-size: 16px;
+						font-family: 'Genericons';
+						content: '\f431';
+
+						position: absolute;
+						right: 5px;
+						top: 9px;
+					}
+				}
+
+				ul{
+					position: absolute;
+					top: 42px;
+					left: 0;
+					background: $green_dark;
+					width: 200px;
+					font-size: .9em;
+					display: none;
+
+					li{
+						border-left: none;
+						display: block;
+						width: 100%;
+
+						a{
+							display: block;
+							width: 100%;
+							box-sizing: border-box;
+
+							&:hover{
+								background: $green;									
+							}
+						}
+
+						&.menu-item-has-children > a{
+							&:after{
+								content: '\f429';
+							}
+						}
+					}
+
+					ul{
+						left: 200px;
+						top: 0;
+					}
+				}
+			}
+		}
 	}
 }

@@ -22,6 +22,14 @@ jQuery(document).ready(function($) {
 	/**
 	 * Top Navigation Mechanism
 	 */
+	 $('#top-nav li').hover(
+	 	function(){
+	 		$(this).addClass('active').children('ul').fadeIn();
+	 	},
+	 	function(){
+	 		$(this).removeClass('active').children('ul').fadeOut();
+	 	}
+ 	);
 
 	 
 
