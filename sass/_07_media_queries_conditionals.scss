@@ -36,6 +36,58 @@ body{
 		}
 	}
 
+	#top-nav{
+		.wrap{
+			ul{
+				li{
+					width: auto;
+
+					a{
+						width: auto;
+					}
+					
+					ul{
+						position: absolute;
+						top: 35px;
+						left: 0;
+						background: $green_dark;
+						width: 200px;
+						font-size: .9em;
+						display: none;
+						z-index: 100;
+
+						li{
+							border-left: none;
+							display: block;
+							width: 100%;
+
+							a{
+								display: block;
+								width: 100%;
+								box-sizing: border-box;
+
+								&:hover{
+									background: $green;									
+								}
+							}
+
+							&.menu-item-has-children > a{
+								&:after{
+									content: '\f429';
+								}
+							}
+						}
+
+						ul{
+							left: 200px;
+							top: 0;
+						}
+					}					
+				}
+			}
+		}
+	}
+
 	#content,
 	.wrap{
 		width: 960px;

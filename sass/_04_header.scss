@@ -79,8 +79,8 @@
 
 			li{
 				float: left;
-				border-left: 1px solid $green_dark;
 				position: relative;
+				width: 100%;
 
 				&:first-child{
 					border-left: none;
@@ -88,7 +88,9 @@
 
 				a{
 					float: left;
-					padding: 5px 10px;
+					padding: 5px 10px;					
+					width: 100%;
+					box-sizing: border-box;
 
 					&:hover{
 						background: $green_dark;
@@ -116,43 +118,6 @@
 						position: absolute;
 						right: 5px;
 						top: 9px;
-					}
-				}
-
-				ul{
-					position: absolute;
-					top: 42px;
-					left: 0;
-					background: $green_dark;
-					width: 200px;
-					font-size: .9em;
-					display: none;
-
-					li{
-						border-left: none;
-						display: block;
-						width: 100%;
-
-						a{
-							display: block;
-							width: 100%;
-							box-sizing: border-box;
-
-							&:hover{
-								background: $green;									
-							}
-						}
-
-						&.menu-item-has-children > a{
-							&:after{
-								content: '\f429';
-							}
-						}
-					}
-
-					ul{
-						left: 200px;
-						top: 0;
 					}
 				}
 			}
