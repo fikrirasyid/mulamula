@@ -70,40 +70,6 @@ body{
 	#header{
 		height: 600px;
 	}
-	
-	body.expanded #top-nav,
-	#top-nav{
-		background: $green;
-
-		#top-nav-toggle{
-			margin-top: 8px;
-		}
-
-		.top-nav-container{
-			top: 51px;
-
-			ul{
-				width: 680px;
-				margin: 0 auto 51px;
-			}
-
-			.sub-menu{
-				margin-left: 40px !important;
-			}
-		}
-	}
-
-	body.admin-bar{
-		#top-nav{
-			.top-nav-container{
-				top: 83px;
-
-				ul{
-					margin-bottom: 83px;
-				}
-			}
-		}
-	}
 
 	#content{
 		margin-top: -62px;
@@ -258,15 +224,7 @@ body{
  * Mobile (below 600px)
  */
 @media all and (max-width: 600px){
-	body{
-		&.admin-bar{
-			#top-nav{
-				.top-nav-container{
-					top: 86px;
-				}
-			}
-		}
-	}
+
 }
 
 /** 

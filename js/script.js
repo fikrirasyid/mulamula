@@ -22,34 +22,8 @@ jQuery(document).ready(function($) {
 	/**
 	 * Top Navigation Mechanism
 	 */
-	var top_nav_container_top_raw = $('.top-nav-container').css('top');
-	var top_nav_container_top = parseInt( top_nav_container_top_raw.replace( 'px', '' ) );
 
-	$('#top-nav-toggle').click(function(){
-		if( $('body').is('.expanded') ){
-			$('#top-nav .top-nav-container').animate({ 'top' : '200%'}, 200, function(){
-				$('body').removeClass('expanded');
-				$(this).attr('style', '');
-			});
-		} else {
-			$('#top-nav .top-nav-container').css({ 'top' : '200%', 'display' : 'block' }).animate({ 'top' : top_nav_container_top }, 200, function(){
-				$('body').addClass('expanded');
-				$(this).attr('style', '');
-			});
-		}
-	});
-
-	/**
-	 * Closing #top-nav using keyboard (escape) 
-	 */
-	$(document).keyup(function(e){
-		if ( e.keyCode == 27 && $('body.expanded').length > 0){
-			$('#top-nav .top-nav-container').animate({ 'top' : '200%'}, 200, function(){
-				$('body').removeClass('expanded');
-				$(this).attr('style', '');
-			});
-		}
-	});
+	 
 
 	/**
 	 * For Posts which have more than one category
