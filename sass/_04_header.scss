@@ -225,21 +225,3 @@ body{
 		}
 	}
 }
-
-/** 
- * 4.3
- * Page Cover
- */
-#page-cover{
-	position: absolute;
-	top: 0;
-	left:0;
-	width: 100%;
-	height: 210px;
-	overflow: hidden;
-	z-index: 40;
-
-	img{
-		width: 100%;
-	}
-}

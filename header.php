@@ -26,11 +26,9 @@
 		</div>
 	</nav>
 	
-	<?php if( !is_singular() && !is_search() && !is_archive() ): ?>
 	<header id="header" class="wrap-outer">
 		<div class="wrap">
 			<h1 id="site-name" class="page-theme"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 			<h2 id="site-desc" class="page-theme-description"><?php bloginfo('description'); ?></h2>			
 		</div>
 	</header>
-	<?php endif; ?>

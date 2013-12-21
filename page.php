@@ -3,25 +3,8 @@
 	while( have_posts() ) : the_post();
 ?>
 
-<header id="header" class="wrap-outer">
-	<div class="wrap">
-		<h1 id="site-name" class="page-theme"><?php the_title(); ?></h1>
-	</div>
-</header>
-
-
 <div id="main" class="site-main">
 	<div id="primary" class="content-area">
-
-		<?php if( has_post_thumbnail() ): ?>
-		<div id="page-cover">
-			<?php the_post_thumbnail(); ?>
-		</div>				
-		<?php else: ?>
-		<div id="page-cover">
-			<img src="<?php header_image(); ?>" alt="<?php bloginfo('title'); ?>">
-		</div>				
-		<?php endif; ?>
 
 		<div id="content" class="site-content" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

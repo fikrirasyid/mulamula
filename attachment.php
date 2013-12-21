@@ -14,21 +14,8 @@
 	}
 ?>
 
-<header id="header" class="wrap-outer single dark">
-	<div class="wrap">
-		<h1 id="site-name" class="page-theme"><?php _e( 'Attachment', 'mulamula' ); ?></h1>
-		<h2 id="site-desc" class="page-theme-description"><a href="<?php echo $parent_post_url; ?>" title="<?php _e( '&larr; Back to post', 'mulamula' ); ?>"><?php _e( '&larr; Back to post', 'mulamula' ); ?></a></h2>			
-	</div>
-</header>
-
 <div id="main" class="site-main">
 	<div id="primary" class="content-area">
-
-		<?php if( has_post_thumbnail() ): ?>
-		<div id="page-cover">
-			<?php echo $featured_image_img; ?>
-		</div>				
-		<?php endif; ?>
 
 		<div id="content" class="site-content" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

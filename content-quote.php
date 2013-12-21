@@ -5,13 +5,6 @@
 
 			<?php mulamula_posted_on(); ?>
 		</div>
-		
-		<?php if( has_post_thumbnail() ): ?>
-		<div class="entry-background">
-			<div class="shadow"></div>
-			<?php the_post_thumbnail( 'large' ); ?>
-		</div>
-		<?php endif; ?>
 	</header> 
 	<div class="entry-content">
 		<?php the_content( __( 'Continue Reading &rarr;', 'mulamula' ) ); ?>
