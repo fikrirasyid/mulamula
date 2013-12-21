@@ -266,16 +266,6 @@ body{
 				}
 			}
 		}
-
-		#top-nav{
-			&.scrolled{
-				top: 0;
-
-				.top-nav-container{
-					top: 40px;
-				}
-			}
-		}
 	}
 }
 

@@ -41,7 +41,6 @@ function mulamula_customize_css(){
 	<style type="text/css">
 		/* Main Site Color */
 		#top-nav,
-		#top-nav.scrolled,
 		body.expanded #top-nav,
 		#content article .entry-header .entry-original-link a:hover,
 		#content article .entry-footer,

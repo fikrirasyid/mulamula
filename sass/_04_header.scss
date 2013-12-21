@@ -59,14 +59,10 @@
  */
 #top-nav{
 	display: block;
-	position: fixed;
+	position: relative;
 	z-index: 200;
 	color: white;
 	opacity: .95;
-
-	&.scrolled{
-		background: $green;		
-	}
 
 	.wrap{
 		padding: 10px 0;

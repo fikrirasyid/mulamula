@@ -759,13 +759,10 @@ button:active,
  */
 #top-nav {
   display: block;
-  position: fixed;
+  position: relative;
   z-index: 200;
   color: white;
   opacity: .95;
-}
-#top-nav.scrolled {
-  background: #1f7f5c;
 }
 #top-nav .wrap {
   padding: 10px 0;
@@ -1821,12 +1818,6 @@ body.logged-in #respond .submit-comment-avatar {
 @media all and (max-width: 600px) {
   body.admin-bar #top-nav .top-nav-container {
     top: 86px;
-  }
-  body #top-nav.scrolled {
-    top: 0;
-  }
-  body #top-nav.scrolled .top-nav-container {
-    top: 40px;
   }
 }
 /** 

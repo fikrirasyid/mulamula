@@ -22,15 +22,6 @@ jQuery(document).ready(function($) {
 	/**
 	 * Top Navigation Mechanism
 	 */
-	$(window).scroll(function(){
-		var window_offset = $(window).scrollTop();
-		if( window_offset > 0 ){
-			$('#top-nav').addClass('scrolled');
-		} else {
-			$('#top-nav').removeClass('scrolled');
-		}
-	});
-
 	var top_nav_container_top_raw = $('.top-nav-container').css('top');
 	var top_nav_container_top = parseInt( top_nav_container_top_raw.replace( 'px', '' ) );
 
